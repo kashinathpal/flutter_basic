@@ -2,6 +2,29 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_basic/accessibility_widgets/excludeSemantics_widgets_screen.dart';
 import 'package:flutter_basic/accessibility_widgets/mergeSemantics_widgets_screen.dart';
+import 'package:flutter_basic/accessibility_widgets/scmantics_widgets_screen.dart';
+import 'package:flutter_basic/advanced_widgets/customPaint_widgets_screen.dart';
+import 'package:flutter_basic/advanced_widgets/draggableScrollablesheet_widgets_screen.dart';
+import 'package:flutter_basic/advanced_widgets/draggable_widgets_screen.dart';
+import 'package:flutter_basic/advanced_widgets/futureBuilder_widgets_screen.dart';
+import 'package:flutter_basic/advanced_widgets/inheritedwidgets_widgets_screen.dart';
+import 'package:flutter_basic/advanced_widgets/notificationListener_widgets_screen.dart';
+import 'package:flutter_basic/advanced_widgets/pageView_widgets_screen.dart';
+import 'package:flutter_basic/advanced_widgets/provider_widgets_screen.dart';
+import 'package:flutter_basic/advanced_widgets/reorderableListView_widgets_screen.dart';
+import 'package:flutter_basic/advanced_widgets/sliverAppBar_widgets_screen.dart';
+import 'package:flutter_basic/advanced_widgets/sliverGrid_widgets_screen.dart';
+import 'package:flutter_basic/advanced_widgets/sliverList_widgets_screen.dart';
+import 'package:flutter_basic/advanced_widgets/streamBuilder_widgets_screen.dart';
+import 'package:flutter_basic/animation_widgets/animatedBuilder_widgets_scree.dart';
+import 'package:flutter_basic/animation_widgets/animatedContainer_widgets_screen.dart';
+import 'package:flutter_basic/animation_widgets/animatedOpacity_widgets_screen.dart';
+import 'package:flutter_basic/animation_widgets/bottomNavigationBar_widgets_screen.dart';
+import 'package:flutter_basic/animation_widgets/fadeTransition_widgets_screen.dart';
+import 'package:flutter_basic/animation_widgets/hero_widgets_screen.dart';
+import 'package:flutter_basic/animation_widgets/rotaionTransation_widgets_screen.dart';
+import 'package:flutter_basic/animation_widgets/scaleTransition_widgets_screen.dart';
+import 'package:flutter_basic/animation_widgets/slideTransition_widgets_screen.dart';
 import 'package:flutter_basic/basicWidgets/align_widgets_screen.dart';
 import 'package:flutter_basic/basicWidgets/center_widgets_screen.dart';
 import 'package:flutter_basic/basicWidgets/column_widgets_screen.dart';
@@ -22,6 +45,44 @@ import 'package:flutter_basic/buttons_and_interactions/icon_button_widgets_scree
 import 'package:flutter_basic/buttons_and_interactions/inkwell_widgets_screen.dart';
 import 'package:flutter_basic/buttons_and_interactions/outlined_button_widgets_screen.dart';
 import 'package:flutter_basic/buttons_and_interactions/text_button_widgets_screen.dart';
+import 'package:flutter_basic/custom_widgets/builder_widgets_screen.dart';
+import 'package:flutter_basic/custom_widgets/layoutBuilder_widgets_screen.dart';
+import 'package:flutter_basic/custom_widgets/mediaQuery_widgets_screen.dart';
+import 'package:flutter_basic/custom_widgets/willpopscope_widgets_screen.dart';
+import 'package:flutter_basic/dialog_and_models/alertDialog_widgets_screen.dart';
+import 'package:flutter_basic/dialog_and_models/bottomSheet_widgets_screen.dart';
+import 'package:flutter_basic/dialog_and_models/simpleDialog_widgets_screen.dart';
+import 'package:flutter_basic/dialog_and_models/snackbar_widgets_screen.dart';
+import 'package:flutter_basic/dialog_and_models/tooltip_widgets_screen.dart';
+import 'package:flutter_basic/input_widgets/autocomplete_widgets_screen.dart';
+import 'package:flutter_basic/input_widgets/checkbox_widgets_screen.dart';
+import 'package:flutter_basic/input_widgets/dropdownButton_widgets_screen.dart';
+import 'package:flutter_basic/input_widgets/form_widgets_screen.dart';
+import 'package:flutter_basic/input_widgets/radio_widgets_screen.dart';
+import 'package:flutter_basic/input_widgets/slider_widgets_screen.dart';
+import 'package:flutter_basic/input_widgets/switch_widgets_screen.dart';
+import 'package:flutter_basic/input_widgets/textField_widgets_screen.dart';
+import 'package:flutter_basic/layout_widgets/appBar_widgets_screen.dart';
+import 'package:flutter_basic/layout_widgets/bottomNavigationBar_widgets_screen.dart';
+import 'package:flutter_basic/layout_widgets/customScrollView_widgets_screen.dart';
+import 'package:flutter_basic/layout_widgets/drawar_widgets_screen.dart';
+import 'package:flutter_basic/layout_widgets/flexible_widgets_screen.dart';
+import 'package:flutter_basic/layout_widgets/gridView_widgets_screen.dart';
+import 'package:flutter_basic/layout_widgets/listView_widgets_screen.dart';
+import 'package:flutter_basic/layout_widgets/scaffold_widgets_screen.dart';
+import 'package:flutter_basic/layout_widgets/tabBarView_widgets_screen.dart';
+import 'package:flutter_basic/layout_widgets/tabBar_widgets_screen.dart';
+import 'package:flutter_basic/layout_widgets/wrap_widgets_screen.dart';
+import 'package:flutter_basic/media_and_effects/audioPlayer_widgets_screen.dart';
+import 'package:flutter_basic/media_and_effects/backDropFilter_widgets_screen.dart';
+import 'package:flutter_basic/media_and_effects/opacity_widgets_screen.dart';
+import 'package:flutter_basic/media_and_effects/shaderMask_widgets_screen.dart';
+import 'package:flutter_basic/media_and_effects/transform_widgets_screen.dart';
+import 'package:flutter_basic/media_and_effects/videoplayer_widgets_screen.dart';
+import 'package:flutter_basic/navigation_widgets/cupertinoPageRoute_widgets_screen.dart';
+import 'package:flutter_basic/navigation_widgets/drawer_widgets_screen.dart';
+import 'package:flutter_basic/navigation_widgets/navigator_widgets_screen.dart';
+import 'package:flutter_basic/navigation_widgets/pageRouteBuilder_widgets_screen.dart';
 import 'package:flutter_basic/screens/widgets_screen/container_screen.dart';
 import 'package:flutter_basic/screens/widgets_screen/image_screen.dart';
 import 'package:flutter_basic/screens/widgets_screen/text_screen.dart';
@@ -377,7 +438,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const TextFieldWidgetsScreen()),
                         );
                       },
                       child: _buildBulletText(
@@ -390,7 +451,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const CheckBoxWidgetsScreen()),
                         );
                       },
                       child: _buildBulletText('Checkbox: ',
@@ -403,7 +464,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const SwitchWidgetsScreen()),
                         );
                       },
                       child: _buildBulletText('Switch: ',
@@ -416,7 +477,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const SliderWidgetsScreen()),
                         );
                       },
                       child: _buildBulletText(
@@ -431,7 +492,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const RadioWidgetsScreen()),
                         );
                       },
                       child: _buildBulletText(
@@ -444,7 +505,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const DropDownButtonWidgetsScreen()),
                         );
                       },
                       child: _buildBulletText(
@@ -457,7 +518,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const FormWidgetsScreen()),
                         );
                       },
                       child: _buildBulletText(
@@ -470,7 +531,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const AutoCompleteWidgetsScreen()),
                         );
                       },
                       child: _buildBulletText('Autocomplete: ',
@@ -495,7 +556,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const ScaffoldWidgetsScreen()),
                         );
                       },
                       child: _buildBulletText(
@@ -508,7 +569,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const AppBarWidgetsScreen()),
                         );
                       },
                       child: _buildBulletText('AppBar: ',
@@ -521,7 +582,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const DrawerWidgetsScreen()),
                         );
                       },
                       child: _buildBulletText('Drawer: ',
@@ -534,7 +595,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const BottomNavigationScreen()),
                         );
                       },
                       child: _buildBulletText(
@@ -549,7 +610,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const TabBarWidgetsScreen()),
                         );
                       },
                       child: _buildBulletText(
@@ -562,7 +623,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const TabBarViewExample()),
                         );
                       },
                       child: _buildBulletText(
@@ -575,7 +636,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const ListViewExample()),
                         );
                       },
                       child: _buildBulletText(
@@ -588,7 +649,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const GridViewExample()),
                         );
                       },
                       child: _buildBulletText('GridView: ',
@@ -601,7 +662,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const CustomScrollViewExample()),
                         );
                       },
                       child: _buildBulletText('CustomScrollView: ',
@@ -614,7 +675,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const FlexibleExample()),
                         );
                       },
                       child: _buildBulletText('Flexible: ',
@@ -627,7 +688,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const WrapExample()),
                         );
                       },
                       child: _buildBulletText('Wrap: ',
@@ -652,7 +713,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const AnimatedContainerExample()),
                         );
                       },
                       child: _buildBulletText(
@@ -665,7 +726,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const AnimatedOpacityExample()),
                         );
                       },
                       child: _buildBulletText('AnimatedOpacity: ',
@@ -678,7 +739,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const AnimatedBuilderExample()),
                         );
                       },
                       child: _buildBulletText('AnimatedBuilder: ',
@@ -691,7 +752,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const BottomNavigationBarExample()),
                         );
                       },
                       child: _buildBulletText(
@@ -706,7 +767,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const FadeTransitionExample()),
                         );
                       },
                       child: _buildBulletText(
@@ -719,7 +780,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const SlideTransitionExample()),
                         );
                       },
                       child: _buildBulletText(
@@ -732,7 +793,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const RotationTransitionExample()),
                         );
                       },
                       child: _buildBulletText(
@@ -745,7 +806,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const ScaleTransitionExample()),
                         );
                       },
                       child: _buildBulletText('ScaleTransition: ',
@@ -758,7 +819,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const HeroWidgetsScreen()),
                         );
                       },
                       child: _buildBulletText('Hero: ',
@@ -784,7 +845,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const StreamBuilderExample()),
                         );
                       },
                       child: _buildBulletText(
@@ -797,7 +858,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const FutureBuilderExample()),
                         );
                       },
                       child: _buildBulletText('FutureBuilder: ',
@@ -810,7 +871,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const InheritedWidgetScreen()),
                         );
                       },
                       child: _buildBulletText('InheritedWidget: ',
@@ -820,11 +881,11 @@ class HomeScreen extends StatelessWidget {
                   ),
                   GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
-                        );
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(
+                        //       builder: (context) => const ProviderWidgetsScreen()),
+                        // );
                       },
                       child: _buildBulletText(
                           'Provider: ',
@@ -838,7 +899,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const CustomPointWidgetsScreen()),
                         );
                       },
                       child: _buildBulletText(
@@ -851,7 +912,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const ReorderableListViewWidgetsScreen()),
                         );
                       },
                       child: _buildBulletText(
@@ -864,7 +925,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const SliverAppBarExample()),
                         );
                       },
                       child: _buildBulletText(
@@ -877,7 +938,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const SliverListExample()),
                         );
                       },
                       child: _buildBulletText('SliverList: ',
@@ -890,7 +951,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const SliverGridExample()),
                         );
                       },
                       child: _buildBulletText('SliverGrid: ',
@@ -903,7 +964,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const PageViewExample()),
                         );
                       },
                       child: _buildBulletText('PageView: ',
@@ -917,7 +978,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const NotificationListenerExample()),
                         );
                       },
                       child: _buildBulletText('NotificationListener: ',
@@ -931,7 +992,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const DraggableExample()),
                         );
                       },
                       child: _buildBulletText('Draggable: ',
@@ -945,7 +1006,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const DraggableScrollableSheetExample()),
                         );
                       },
                       child: _buildBulletText('DraggableScrollableSheet: ',
@@ -971,7 +1032,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const AlertDialogExample()),
                         );
                       },
                       child: _buildBulletText(
@@ -984,7 +1045,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const SimpleDialogExample()),
                         );
                       },
                       child: _buildBulletText('SimpleDialog: ',
@@ -997,7 +1058,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const BottomSheetExample()),
                         );
                       },
                       child: _buildBulletText('BottomSheet: ',
@@ -1010,7 +1071,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const SnackBarExample()),
                         );
                       },
                       child: _buildBulletText(
@@ -1025,7 +1086,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const TooltipExample()),
                         );
                       },
                       child: _buildBulletText(
@@ -1051,7 +1112,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const VideoPlayerScreen()),
                         );
                       },
                       child: _buildBulletText(
@@ -1064,7 +1125,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const AudioPlayerScreen()),
                         );
                       },
                       child: _buildBulletText('AudioPlayer: ',
@@ -1077,7 +1138,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const OpacityDemo()),
                         );
                       },
                       child: _buildBulletText('Opacity: ',
@@ -1090,7 +1151,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const TransformDemo()),
                         );
                       },
                       child: _buildBulletText(
@@ -1105,7 +1166,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const ShaderMaskDemo()),
                         );
                       },
                       child: _buildBulletText(
@@ -1118,7 +1179,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const BackdropFilterDemo()),
                         );
                       },
                       child: _buildBulletText(
@@ -1144,7 +1205,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const BuilderDemo()),
                         );
                       },
                       child: _buildBulletText(
@@ -1157,7 +1218,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const CustomScrollViewExample()),
                         );
                       },
                       child: _buildBulletText('CustomScrollView: ',
@@ -1170,7 +1231,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const LayoutBuilderExample()),
                         );
                       },
                       child: _buildBulletText('LayoutBuilder: ',
@@ -1183,7 +1244,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => const MediaQueryExample()),
                         );
                       },
                       child: _buildBulletText(
@@ -1198,7 +1259,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) => FirstScreen()),
                         );
                       },
                       child: _buildBulletText(
@@ -1224,7 +1285,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) =>  NavigatorWidgetsScreen()),
                         );
                       },
                       child: _buildBulletText(
@@ -1237,7 +1298,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) =>  PageRouteBuilderExample()),
                         );
                       },
                       child: _buildBulletText('PageRouteBuilder: ',
@@ -1250,7 +1311,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) =>  CupertinoExample()),
                         );
                       },
                       child: _buildBulletText('CupertinoPageRoute: ',
@@ -1263,7 +1324,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) =>  DrawerExample()),
                         );
                       },
                       child: _buildBulletText(
@@ -1291,7 +1352,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const TextScreen()),
+                              builder: (context) =>  SemanticsExample()),
                         );
                       },
                       child: _buildBulletText(

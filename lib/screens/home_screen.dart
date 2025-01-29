@@ -1109,11 +1109,11 @@ class HomeScreen extends StatelessWidget {
                 children: [
                   GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const VideoPlayerScreen()),
-                        );
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(
+                        //       builder: (context) => const VideoPlayerScreen()),
+                        // );
                       },
                       child: _buildBulletText(
                           'VideoPlayer: ', 'Plays video files.', context)),
@@ -1122,11 +1122,11 @@ class HomeScreen extends StatelessWidget {
                   ),
                   GestureDetector(
                       onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const AudioPlayerScreen()),
-                        );
+                        // Navigator.push(
+                        //   context,
+                        //   MaterialPageRoute(
+                        //       builder: (context) => const AudioPlayerScreen()),
+                        // );
                       },
                       child: _buildBulletText('AudioPlayer: ',
                           'Plays audio files (via plugins).', context)),

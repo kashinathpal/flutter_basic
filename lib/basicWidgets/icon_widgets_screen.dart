@@ -31,10 +31,10 @@ class IconWidgetsScreen extends StatelessWidget {
             //   progress: animationController,
             // ),
             // Custom Icon Data
-            Icon(
-              IconData(0xe900, fontFamily: 'MaterialIcons'),
-              size: 40,
-            ),
+            // Icon(
+            //   IconData(0xe900, fontFamily: 'MaterialIcons'),
+            //   size: 40,
+            // ),
             const SizedBox(height: 10),
             // ImageIcon
             ImageIcon(
